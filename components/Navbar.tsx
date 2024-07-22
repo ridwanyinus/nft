@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="pt-6 lg:pt-8 px-5 md:px-0  w-full  pb-14 lg:pb-20 relative z-10">
+    <nav className="pt-6 lg:pt-8 px-5 lg:px-0  w-full  pb-14 lg:pb-20 relative z-10">
       <section className="flex justify-between items-center">
         <Link href="/" className="desktop:flex-1  text-[1.75rem] font-bold leading-[118.5%] logo relative z-[999]">
           KNFT.
@@ -43,7 +43,7 @@ const Navbar = () => {
             )}
 
             {toggleMenu && (
-              <div className="flex w-full bg-dark">
+              <div className="flex w-full bg-transparent">
                 <div className="absolute overflow-hidden w-full h-screen left-0 right-0 top-0 bg-primary scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12 bg-dark">
                   {navItems.map((item, idx: number) => (
                     <ul key={`link=${idx}`}>
