@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <section className="relative">
         <div className="section-bg w-full h-full"></div>
         <Navbar />
+        <Hero />
       </section>
     </main>
   );
