@@ -21,6 +21,22 @@ const Hero = () => {
             Explore NFTs
           </button>
         </div>
+
+        <div className="h-full relative">
+          <div className="hero-bg p-8  w-[18rem] sm:w-[25rem] h-[20rem] md:w-[30rem] sm:h-[20rem] lg:w-[25rem] lg:h-[25rem] xl:w-[30rem] xl:h-[30rem] desktop:w-[35rem] desktop:h-[35rem] 2xl:w-[37.464rem] 2xl:h-[37.464rem]  lg:bg-hero-pattern bg-cover relative bg-top">
+            <Image
+              src={hero}
+              alt="nft-character"
+              className="rounded-xl lg:rounded-[30rem] w-[90%] h-[80%] lg:w-[82%] xl:w-[24.188rem]  desktop:w-[83%] 2xl:w-[80%]  lg:h-auto desktop:rounded-[37.464rem] absolute right-4 sm:right-5 md:right-6 lg:bottom-[3.2rem] lg:right-[3rem] xl:bottom-16 xl:right-16  2xl:bottom-20 desktop:right-[4rem] 2xl:right-20 "
+              priority
+              placeholder="blur"
+            />
+
+            <div className="w-20 h-20 md:w-24 md:h-24 xl:w-28 xl:h-28 desktop:w-36 desktop:h-36 2xl:w-[11.063rem] 2xl:h-[11.063rem] bg-blue text-center text-white  leading-[118.5%] font-bold text-sm lg:text-base desktop:text-xl 2xl:text-2xl rounded-full flex justify-center items-center border border-pink absolute bottom-0 lg:bottom-8 xl:bottom-6">
+              Cyber <br /> Samurai <br /> #177
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
