@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 const Navbar = () => {
   return (
-    <nav className="flex gap-x-4 *:text-green-900 bg-slate-600">
+    <nav className="pt-6 lg:pt-8 px-5   w-full  pb-14 lg:pb-20 relative z-10 flex gap-x-10 bg-green-900">
       <Link href="/">add</Link>
       <Link href="/">add</Link>
       <Link href="/">add</Link>
