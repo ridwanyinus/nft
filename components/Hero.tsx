@@ -15,9 +15,11 @@ const Hero = () => {
             NFTs are used for digital art and collectibles, GameFi projects, metaverses, and more.
           </p>
 
-          <Image src={imageSix} alt="icon" className="absolute w-[3rem]  sm:w-[4rem] xl:w-auto  md:right-0 lg:right-0 xl:right-24 bottom-0 sm:bottom-10" />
+          <Image src={imageSix} alt="icon" className="absolute w-[3rem]  sm:w-[4rem] xl:w-[5rem]  md:right-0 lg:right-0 xl:right-24 bottom-10 lg:bottom-10" />
 
-          <button type="button" className="max-lg:hidden text-white text-lg desktop:text-xl py-3 px-8 desktop:px-10 font-bold font-helvetica hover:text-cyan transition-colors btn-1 leading-[150%]">
+          <button
+            type="button"
+            className=" text-white text-lg lg:text-[1.25rem]  px-5 small:px-10 desktop:text-xl py-3 lg:px-8 desktop:px-10 font-bold font-helvetica hover:text-cyan transition-colors btn-1 leading-[150%] max-lg:mx-auto max-lg:block mb-8 sm:mb-12 lg:mb-0">
             Explore NFTs
           </button>
         </div>
