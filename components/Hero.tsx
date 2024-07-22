@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import hero from "@/public/image 4.png";
 import imageSix from "@/public/image 6.png";
+import eye from "@/public/eye.png";
 const Hero = () => {
   return (
     <main className="py-5  md:py-8 lg:py-4 2xl:py-10 px-5 md:px-0">
@@ -19,7 +20,7 @@ const Hero = () => {
 
           <button
             type="button"
-            className=" text-white text-lg lg:text-[1.25rem]  px-5 small:px-10 desktop:text-xl py-3 lg:px-8 desktop:px-10 font-bold font-helvetica hover:text-cyan transition-colors btn-1 leading-[150%] max-lg:mx-auto max-lg:block mb-8 sm:mb-12 lg:mb-0">
+            className=" text-white text-lg lg:text-[1.25rem]  px-5 small:px-10 desktop:text-xl py-3 lg:px-8 desktop:px-10 font-bold font-helvetica hover:text-cyan transition-colors btn-1 leading-[150%] max-lg:mx-auto max-lg:block mb-8 sm:mb-12 desktop:mb-0">
             Explore NFTs
           </button>
         </div>
@@ -38,6 +39,14 @@ const Hero = () => {
               Cyber <br /> Samurai <br /> #177
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col justify-center items-center lg:items-start mt-[2.5rem] sm:mt-12 lg:mt-0">
+        <div className="flex gap-x-4 items-center">
+          <Image src={eye} alt="eye" className="w-9 xl:w-auto" />
+
+          <h3 className="text-white text-base sm:text-lg md:text-xl lg:text-2xl desktop:text-3xl font-bold leading-normal">Nico NFT Marketplace Overview</h3>
         </div>
       </section>
     </main>
