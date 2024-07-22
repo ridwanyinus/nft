@@ -44,7 +44,7 @@ const Hero = () => {
 
       <section className="flex flex-col justify-center items-center lg:items-start mt-[2.5rem] sm:mt-12 lg:mt-0">
         <div className="flex gap-x-4 items-center">
-          <Image src={eye} alt="eye" className="w-9 xl:w-auto" />
+          <Image src={eye} alt="eye" className="w-9 xl:w-12" />
 
           <h3 className="text-white text-base sm:text-lg md:text-xl lg:text-2xl desktop:text-3xl font-bold leading-normal">Nico NFT Marketplace Overview</h3>
         </div>
