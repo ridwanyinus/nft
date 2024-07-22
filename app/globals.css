@@ -2,32 +2,175 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Helvetica";
+  src: url("../public/fonts/HelveticaNeueLTStd-Roman.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Regular Weight */
+@font-face {
+  font-family: "Axiforma";
+  src: url("../public/fonts/Axiforma-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* Bold Weight */
+@font-face {
+  font-family: "Axiforma";
+  src: url("../public/fonts/Axiforma-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* SemiBold Weight */
+@font-face {
+  font-family: "Axiforma";
+  src: url("../public/fonts/Axiforma-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Heavy Weight */
+@font-face {
+  font-family: "Axiforma";
+  src: url("../public/fonts/Axiforma-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Italic Style */
+@font-face {
+  font-family: "Axiforma";
+  src: url("../public/fonts/Axiforma-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Light Weight */
+@font-face {
+  font-family: "Axiforma";
+  src: url("../public/fonts/Axiforma-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Medium Weight */
+@font-face {
+  font-family: "Axiforma";
+  src: url("../public/fonts/Axiforma-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Helvetica";
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Axiforma";
+}
+
+.logo {
+  background: var(--Unnamed-Color, linear-gradient(104deg, #df1cff -25.59%, #ea0070 138%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.btn {
+  background: var(--Unnamed-Color, rgba(255, 255, 255, 0.05));
+  box-shadow: 0px 16px 80px 0px rgba(208, 17, 204, 0.15);
+}
+
+.btn-1 {
+  border-radius: 8px;
+  background: var(--Unnamed-Color, linear-gradient(104deg, #df1cff -25.59%, #ea0070 138%));
+  box-shadow: 0px 9px 100px 0px rgba(208, 17, 204, 0.35);
+}
+
+.btn-1:hover {
+  background: #04011c;
+  color: cyan;
+}
+
+.section-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 952.459px;
+  height: 855.857px;
+  transform: rotate(-45deg);
+  flex-shrink: 0;
+  border-radius: 952.459px;
+  opacity: 0.15;
+  background: var(
+    --Unnamed-Color,
+    conic-gradient(from 180deg at 50% 50%, #d9d9d9 0deg, #297fff 0.035999999090563506deg, #bf38ff 78.75deg, #cf68ff 187.49999284744263deg, #28cbff 268.1250071525574deg, #e1a1ff 360deg)
+  );
+  filter: blur(250px);
+}
+.section-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 2484.17px;
+  height: 2484.17px;
+  transform: rotate(-45deg);
+  flex-shrink: 0;
+  border-radius: 2484.17px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(217, 217, 217, 0.1) 0deg,
+    rgba(41, 127, 255, 0.1) 0.035999999090563506deg,
+    rgba(191, 56, 255, 0.1) 78.75deg,
+    rgba(207, 104, 255, 0.1) 187.49999284744263deg,
+    rgba(40, 203, 255, 0.1) 268.1250071525574deg,
+    rgba(225, 161, 255, 0.1) 360deg
+  );
+  filter: blur(250px);
+}
+
+.section-bg {
+  transform: rotate(-45deg);
+  flex-shrink: 0;
+  border-radius: 2484.17px;
+  background: var(
+    --Unnamed-Color,
+    conic-gradient(
+      from 180deg at 50% 50%,
+      rgba(141, 255, 27, 0.06) 0deg,
+      rgba(41, 127, 255, 0.06) 0.035999999090563506deg,
+      rgba(56, 112, 255, 0.06) 97.50000357627869deg,
+      rgba(15, 123, 251, 0.06) 187.49999284744263deg,
+      rgba(0, 194, 255, 0.06) 283.1249928474426deg,
+      rgba(225, 161, 255, 0.06) 360deg
+    )
+  );
+  filter: blur(250px);
+  position: absolute;
+  inset: 0;
+}
+
+@media (max-width: 1023px) {
+  .hero-bg {
+    border-radius: 16px;
+    background: var(--Unnamed-Color, rgba(255, 255, 255, 0.03));
   }
 }
