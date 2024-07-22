@@ -8,13 +8,24 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="pt-6 lg:pt-8 px-5   w-full  pb-14 lg:pb-20 relative z-10 flex gap-x-10  *:text-white">
-      <Link href="/" className="desktop:flex-1  text-[1.75rem] font-bold leading-[118.5%] logo relative z-[999]">
-        KNFT.
-      </Link>
-      <Link href="/">add</Link>
-      <Link href="/">add</Link>
-      <Link href="/">add</Link>
+    <nav className="pt-6 lg:pt-8 px-5 md:px-0  w-full  pb-14 lg:pb-20 relative z-10">
+      <section className="flex justify-between items-center">
+        <Link href="/" className="desktop:flex-1  text-[1.75rem] font-bold leading-[118.5%] logo relative z-[999]">
+          KNFT.
+        </Link>
+
+        <div className="flex justify-center items-center gap-x-10 desktop:gap-x-12 2xl:gap-x-16 max-lg:hidden desktop:flex-[1.5] ">
+          {navItems.map((navItems, idx: number) => (
+            <ul key={idx}>
+              <li>
+                <Link href={navItems.link} className="flex text-sm xl:text-base 2xl:text-xl hover:text-opacity-100 text-white text-opacity-70  text-right transition-colors">
+                  {navItems.name}
+                </Link>
+              </li>
+            </ul>
+          ))}
+        </div>
+      </section>
     </nav>
   );
 };
