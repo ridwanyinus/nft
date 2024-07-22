@@ -25,6 +25,14 @@ const Navbar = () => {
             </ul>
           ))}
         </div>
+
+        <div className="desktop:flex-1 text-right">
+          <button
+            type="button"
+            className="max-lg:hidden text-white text-lg desktop:text-xl py-3 px-8 desktop:px-10 border-[0.094rem] border-pink btn rounded-lg font-normal  hover:text-cyan hover:bg-dark transition-colors">
+            Get in Touch
+          </button>
+        </div>
       </section>
     </nav>
   );
