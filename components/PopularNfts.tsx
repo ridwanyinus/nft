@@ -11,7 +11,7 @@ const PopularNfts = () => {
         <span className="italic font-light text-cyan ">Most Popular</span> NFTs
       </h1>
 
-      <section className="my-8 md:my-10 largesceen:my-16 flex flex-wrap justify-between sm:justify-center items-center  sm:gap-x-12 md:gap-x-16 lg:gap-x-20">
+      <section className="my-8 md:my-10  largesceen:my-16 flex flex-wrap justify-between sm:justify-center items-center  sm:gap-x-12 md:gap-x-16 lg:gap-x-20">
         <div className="relative flex flex-col items-center justify-center w-fit">
           <Image src={h1Group} alt="group-eclipse" className="relative w-[3rem] sm:w-[5rem] md:w-[6rem] lg:w-[7rem] desktop:w-auto largesceen:h-[3.438rem]" />
           <h2 className="text-white font-medium text-xs xl:text-[1.375rem] largesceen:text-3xl w-fit absolute inset-0 mx-auto text-center md:top-1 xl:top-3 desktop:top-5 largesceen:top-2 opacity-80">
@@ -34,11 +34,11 @@ const PopularNfts = () => {
               />
 
               <div className="heart p-1 md:p-2 desktop:p-3 w-fit absolute top-4 right-4 md:top-8 md:right-6 lg:top-10 desktop:top-12 lg:right-8 desktop:right-12">
-                <FaHeart className=" text-white w-3 h-3  lg:w-4 lg:h-4 desktop:w-6 desktop:h-6 active:text-orange-600" />
+                <FaHeart className=" text-white w-3 h-3  lg:w-4 lg:h-4 desktop:w-6 desktop:h-6 hover:text-orange-600 active:text-orange-600" />
               </div>
 
               <div className="flex  xs:space-x-4 sm:space-x-3 md:space-x-6 lg:space-x-6 xl:space-x-8 desktop:space-x-10 2xl:space-x-12 mb-1 sm:mb-2 items-center">
-                <h4 className="text-white font-semibold text-[11px] md:text-xs lg:text-base xl:text-xl desktop:text-[1.375rem] largesceen:text-2xl ">{items.name}</h4>
+                <h4 className="text-white font-semibold text-[11px] md:text-xs lg:text-base xl:text-xl 2xl:text-[1.375rem] largesceen:text-2xl ">{items.name}</h4>
 
                 <div className="inline-flex items-center justify-center">
                   <Image src={items.ethImg} alt="eth" className="w-3 h-full sm:w-4 lg:w-6 desktop:w-8" />
