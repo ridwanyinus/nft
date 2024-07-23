@@ -5,7 +5,7 @@ import imageSix from "@/public/image 6.png";
 import eye from "@/public/eye.png";
 const Hero = () => {
   return (
-    <main className="py-5  md:py-8 lg:py-4 2xl:py-10 px-5 md:px-0">
+    <main className="py-5  md:py-8 lg:py-4 2xl:py-10 px-5 lg:px-0">
       <section className="flex justify-between items-center flex-col lg:flex-row">
         <div className="relative">
           <h1 className=" text-center lg:text-start  text-[2.1rem] sm:text-[3rem] md:text-[3.5rem]  xl:text-[3.484rem] largesceen:text-7xl text-white leading-[130%]  xl:min-w-[39.5rem] font-black mb-4 xs:mb-6 sm:mb-8 md:mb-12">
@@ -42,11 +42,30 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center lg:items-start mt-[2.5rem] sm:mt-12 lg:mt-0">
-        <div className="flex gap-x-4 items-center">
+      <section className="flex flex-col mt-[2.5rem] sm:mt-12 lg:mt-0">
+        <div className="flex gap-x-4 justify-center lg:justify-start items-center mb-8">
           <Image src={eye} alt="eye" className="w-9 xl:w-12" />
 
-          <h3 className="text-white text-base sm:text-lg md:text-xl lg:text-2xl desktop:text-3xl font-bold leading-normal">Nico NFT Marketplace Overview</h3>
+          <h3 className="text-white text-end xs:text-start text-base sm:text-lg md:text-xl lg:text-2xl desktop:text-3xl font-bold leading-normal">Nico NFT Marketplace Overview</h3>
+        </div>
+
+        <div className="flex flex-wrap max-sm:gap-y-10 justify-center sm:justify-start gap-x-12 xs:gap-x-20 sm:gap-x-12 md:gap-x-16 lg:gap-x-20">
+          <div>
+            <p className="mb-2 xl:mb-4 text-white text-sm sm:text-lg md:text-xl largesceen:text-2xl leading-[150%] text-opacity-[0.8]"> World Arts</p>
+            <h4 className="text-white font-bold leading-normal text-xl sm:text-2xl md:text-3xl xl:text-[2rem] largesceen:text-4xl ">30.000 +</h4>
+          </div>
+          <div>
+            <p className="mb-2 xl:mb-4 text-white text-sm sm:text-lg md:text-xl largesceen:text-2xl leading-[150%] text-opacity-[0.8]"> Digital Artists</p>
+            <h4 className="text-white font-bold leading-normal text-xl sm:text-2xl md:text-3xl xl:text-[2rem] largesceen:text-4xl ">17.000 +</h4>
+          </div>
+          <div>
+            <p className="mb-2 xl:mb-4 text-white text-sm sm:text-lg md:text-xl largesceen:text-2xl leading-[150%] text-opacity-[0.8]"> Live Auctions</p>
+            <h4 className="text-white font-bold leading-normal text-xl sm:text-2xl md:text-3xl xl:text-[2rem] largesceen:text-4xl ">22.000 +</h4>
+          </div>
+          <div>
+            <p className="mb-2 xl:mb-4 text-white text-sm sm:text-lg md:text-xl largesceen:text-2xl leading-[150%] text-opacity-[0.8]">Unique Products</p>
+            <h4 className="text-white font-bold leading-normal text-xl sm:text-2xl md:text-3xl xl:text-[2rem] largesceen:text-4xl ">50.000 +</h4>
+          </div>
         </div>
       </section>
     </main>
