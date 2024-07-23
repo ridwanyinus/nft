@@ -9,7 +9,6 @@
   font-weight: normal;
 }
 
-/* Regular Weight */
 @font-face {
   font-family: "Axiforma";
   src: url("../public/fonts/Axiforma-Regular.ttf") format("truetype");
@@ -17,7 +16,6 @@
   font-style: normal;
 }
 
-/* Bold Weight */
 @font-face {
   font-family: "Axiforma";
   src: url("../public/fonts/Axiforma-Bold.ttf") format("truetype");
@@ -25,7 +23,6 @@
   font-style: normal;
 }
 
-/* SemiBold Weight */
 @font-face {
   font-family: "Axiforma";
   src: url("../public/fonts/Axiforma-SemiBold.ttf") format("truetype");
@@ -33,7 +30,6 @@
   font-style: normal;
 }
 
-/* Heavy Weight */
 @font-face {
   font-family: "Axiforma";
   src: url("../public/fonts/Axiforma-Heavy.ttf") format("truetype");
@@ -41,15 +37,13 @@
   font-style: normal;
 }
 
-/* Italic Style */
 @font-face {
   font-family: "Axiforma";
   src: url("../public/fonts/Axiforma-Italic.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 300;
   font-style: italic;
 }
 
-/* Light Weight */
 @font-face {
   font-family: "Axiforma";
   src: url("../public/fonts/Axiforma-Light.ttf") format("truetype");
@@ -57,7 +51,6 @@
   font-style: normal;
 }
 
-/* Medium Weight */
 @font-face {
   font-family: "Axiforma";
   src: url("../public/fonts/Axiforma-Medium.ttf") format("truetype");
@@ -168,9 +161,19 @@ h6 {
   inset: 0;
 }
 
+.card-bg {
+  border-radius: 16px;
+  background: var(--Unnamed-Color, rgba(255, 255, 255, 0.03));
+}
+
 @media (max-width: 1023px) {
   .hero-bg {
     border-radius: 16px;
     background: var(--Unnamed-Color, rgba(255, 255, 255, 0.03));
+  }
+}
+@media (max-width: 425px) {
+  .card-bg {
+    box-shadow: 0px 9px 100px 0px rgba(208, 17, 204, 0.35);
   }
 }

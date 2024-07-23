@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image1 from "@/public/image 8.png";
+import image1 from "@/public/image8.png";
 import image2 from "@/public/image 10.png";
 import image3 from "@/public/image 7.png";
 import image4 from "@/public/image 11.png";
