@@ -21,7 +21,7 @@ const PopularNfts = () => {
         <h2 className="text-white font-medium text-xs  xl:text-[1.375rem] largesceen:text-3xl  opacity-80">Peaceful ape</h2>
       </section>
 
-      <section className="grid grid-cols-2 sm:grid-cols-3 fourk:grid-cols-6 gap-y-12 gap-x-3 sm:gap-x-4 md:gap-x-6 lg:gap-x-12 xl:gap-x-10 desktop:gap-x-14 largesceen:gap-x-28 fourk:gap-x-8">
+      <section className="grid grid-cols-2 sm:grid-cols-3 fourk:grid-cols-6 gap-y-6 sm:gap-y-8 md:gap-y-12 gap-x-3 sm:gap-x-4 md:gap-x-6 lg:gap-x-12 xl:gap-x-10 desktop:gap-x-14 largesceen:gap-x-28 fourk:gap-x-8">
         {Nfts.map((items, idx: number) => (
           <div key={idx} className="">
             <div className="card-bg w-fit p-3  md:p-4 lg:p-6 desktop:p-8">
@@ -50,7 +50,7 @@ const PopularNfts = () => {
 
               <button
                 type="button"
-                className="mt-4 md:mt-6 lg:mt-8 text-white text-xs md:text-sm lg:text-base max-md:rounded-md xl:text-xl py-1 md:py-2 xl:py-3   font-bold font-helvetica hover:text-cyan transition-colors btn-1 leading-[150%] w-full">
+                className="mt-4 md:mt-6 lg:mt-8 text-white text-xs md:text-sm lg:text-base max-md:rounded-md xl:text-xl py-1 md:py-2 xl:py-3   font-bold font-helvetica hover:text-cyan transition-colors btn-1 leading-[150%] w-full relative cursor-pointer">
                 Buy Product
               </button>
             </div>
