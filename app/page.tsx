@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import PopularNfts from "@/components/PopularNfts";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <div className="section-bg w-full h-full"></div>
         <Navbar />
         <Hero />
+        <PopularNfts />
       </section>
     </main>
   );
