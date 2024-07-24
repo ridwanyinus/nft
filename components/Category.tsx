@@ -6,7 +6,7 @@ import image3 from "@/public/category3.jpeg";
 import image4 from "@/public/category4.jpeg";
 const Category = () => {
   return (
-    <main className="py-5  sm:py-8  lg:py-10  2xl:py-16 px-5">
+    <main className="py-5  sm:py-8  lg:py-10  xl:py-16 px-5">
       <h1 className="font-black text-white text-center  text-2xl sm:text-3xl xl:text-[2.5rem]  largesceen:text-5xl mb-2 sm:mb-4 xl:mb-8">
         <span className="text-cyan font-extralight italic inline-block">Browse by</span> Category
       </h1>
