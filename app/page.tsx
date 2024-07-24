@@ -1,8 +1,8 @@
+import Category from "@/components/Category";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import PopularNfts from "@/components/PopularNfts";
 import UniqueFiles from "@/components/UniqueFiles";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
         <PopularNfts />
       </section>
       <UniqueFiles />
+      <Category />
     </main>
   );
 }

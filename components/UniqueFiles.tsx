@@ -21,7 +21,7 @@ const UniqueFiles = () => {
 
               <p className="opacity-80 text-white text-xs   xl:text-lg desktop:text-xl largesceen:text-2xl w-[16rem] md:w-[20rem] lg:w-[25rem] xl:w-[30rem] desktop:w-[33.75rem] largesceen:w-[40rem]">{item.text}</p>
 
-              <Image src={item.Img} alt={item.title} className="w-8 md:w-10 lg:w-12 xl:w-16 desktop:w-[4rem]  largesceen:w-[4.5rem] absolute top-0 right-6 sm:right-4 md:right-4 lg:right-8 xl:right-6 desktop:right-8 largesceen:right-16" />
+              <Image src={item.Img} alt={item.title} className="w-8 md:w-10 lg:w-12 xl:w-16 desktop:w-[4rem]  largesceen:w-[4.5rem] absolute top-0 right-6 sm:right-4 md:right-4 lg:right-8 xl:right-6 desktop:right-8 largesceen:right-[3rem]" />
             </div>
           ))}
         </div>
