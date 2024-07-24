@@ -23,7 +23,7 @@ const PopularNfts = () => {
         <h2 className="text-white font-medium text-xs  xl:text-[1.375rem] largesceen:text-3xl  opacity-80">Peaceful ape</h2>
       </section>
 
-      <section className="grid grid-cols-2 sm:grid-cols-3 fourk:grid-cols-6 gap-y-6 sm:gap-y-8 md:gap-y-12 gap-x-3 sm:gap-x-4 md:gap-x-6 lg:gap-x-12 xl:gap-x-10 desktop:gap-x-14 largesceen:gap-x-28 fourk:gap-x-8">
+      <section className="grid grid-cols-2 sm:grid-cols-3 place-items-center gap-y-6 sm:gap-y-8 md:gap-y-12 gap-x-3 sm:gap-x-4 md:gap-x-6 lg:gap-x-12 xl:gap-x-10 desktop:gap-x-14 largesceen:gap-x-28 fourk:gap-x-0">
         {Nfts.map((items, idx: number) => (
           <div key={idx} className="">
             <div className="card-bg w-fit p-3  md:p-4 lg:p-6 desktop:p-8 relative">

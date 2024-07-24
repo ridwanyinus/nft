@@ -20,6 +20,7 @@ const config: Config = {
 
       backgroundImage: {
         "hero-pattern": "url('../public/Union.png')",
+        "unique-bg": "url('../public/Subtract.svg')",
       },
     },
   },

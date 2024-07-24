@@ -8,6 +8,10 @@ import image6 from "@/public/image 13.png";
 import eth from "@/public/Ethereum.png";
 import star1 from "@/public/Christmas Star.png";
 import star2 from "@/public/Christmas Star-black.png";
+import uniqueImg1 from "@/public/Coin Wallet.png";
+import uniqueImg2 from "@/public/Add New.png";
+import uniqueImg3 from "@/public/NFT.png";
+import uniqueImg4 from "@/public/Sell.png";
 
 export type NavItem = {
   name: string;
@@ -77,5 +81,28 @@ export const Nfts = [
     ethImg: eth,
     star: star1,
     starBlack: star2,
+  },
+];
+
+export const Unique = [
+  {
+    title: "Set Up Your Wallet",
+    text: "Connect your wallet to Nico by clicking the wallet icon in the top right corner after you've set it up.",
+    Img: uniqueImg1,
+  },
+  {
+    title: "Create Unique Collection",
+    text: "Set a secondary sales fee and add social links, a description, profile and banner images, and a description.",
+    Img: uniqueImg2,
+  },
+  {
+    title: "Download NFTs",
+    text: "Add a title and description to your work (picture, video, audio, or 3D art), then customize your NFTs with properties.",
+    Img: uniqueImg3,
+  },
+  {
+    title: "Put Them Up for Sale",
+    text: "Auctions, fixed-price listings, and declining-price listings are all options. You decide how you'd like to sell your NFTs.",
+    Img: uniqueImg4,
   },
 ];
