@@ -15,10 +15,10 @@ const Category = () => {
       </p>
 
       <section className="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-8 mt-8 xl:mt-12 place-items-center">
-        <Image priority src={image1} alt="Category" className="h-[9rem] md:h-[10rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25.125rem] rounded-xl sm:rounded-2xl bg-cover " />
-        <Image priority src={image2} alt="Category" className="col-span-2 h-[9rem] md:h-[10rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25.125rem] rounded-xl sm:rounded-2xl bg-cover" />
-        <Image priority src={image3} alt="Category" className="h-[9rem] md:h-[10rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25.125rem] rounded-xl sm:rounded-2xl bg-cover col-span-2" />
-        <Image priority src={image4} alt="Category" className="h-[9rem] md:h-[10rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25.125rem] rounded-xl sm:rounded-2xl bg-cover " />
+        <Image priority src={image1} alt="Category" className="h-[9rem] md:h-[10rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25.125rem] rounded-lg sm:rounded-2xl bg-cover " />
+        <Image priority src={image2} alt="Category" className="col-span-2 h-[9rem] md:h-[10rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25.125rem] rounded-lg sm:rounded-2xl bg-cover" />
+        <Image priority src={image3} alt="Category" className="h-[9rem] md:h-[10rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25.125rem] rounded-lg sm:rounded-2xl bg-cover col-span-2" />
+        <Image priority src={image4} alt="Category" className="h-[9rem] md:h-[10rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25.125rem] rounded-lg sm:rounded-2xl bg-cover " />
       </section>
 
       <button
