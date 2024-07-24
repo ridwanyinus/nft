@@ -37,7 +37,7 @@ const PopularNfts = () => {
                 <FaHeart className=" text-white w-3 h-3  lg:w-4 lg:h-4 desktop:w-6 desktop:h-6 hover:text-orange-600 active:text-orange-600" />
               </div>
 
-              <div className="flex  xs:space-x-4 sm:space-x-3 md:space-x-6 lg:space-x-6 xl:space-x-8 desktop:space-x-10 2xl:space-x-12 mb-1 sm:mb-2 items-center">
+              <div className="flex xs:space-x-4 sm:space-x-3 md:space-x-6 lg:space-x-6 xl:space-x-8 desktop:space-x-10 2xl:space-x-12 mb-1 sm:mb-2 items-center">
                 <h4 className="text-white font-semibold text-[11px] md:text-xs lg:text-base xl:text-xl 2xl:text-[1.375rem] largesceen:text-2xl ">{items.name}</h4>
 
                 <div className="inline-flex items-center justify-center">
@@ -61,6 +61,12 @@ const PopularNfts = () => {
           </div>
         ))}
       </section>
+
+      <button
+        type="button"
+        className=" text-white text-sm md:text-base xl:text-xl px-4 sm:px-6 largesceen:text-2xl py-2 xl:py-3 lg:px-8 desktop:px-10 font-bold font-helvetica hover:text-cyan transition-colors btn-2 leading-[150%] mt-6 sm:mt-8 lg:mt-12 mx-auto block">
+        Explore All NFTs
+      </button>
     </main>
   );
 };

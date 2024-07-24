@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import PopularNfts from "@/components/PopularNfts";
+import UniqueFiles from "@/components/UniqueFiles";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <PopularNfts />
       </section>
+      <UniqueFiles />
     </main>
   );
 }

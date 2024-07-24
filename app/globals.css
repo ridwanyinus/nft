@@ -8,6 +8,12 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "Helvetica";
+  src: url("../public/fonts/Helvetica-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
 
 @font-face {
   font-family: "Axiforma";
@@ -40,7 +46,6 @@
 @font-face {
   font-family: "Axiforma";
   src: url("../public/fonts/Axiforma-Italic.ttf") format("truetype");
-  font-weight: 300;
   font-style: italic;
 }
 
@@ -171,14 +176,26 @@ h6 {
   background: var(--Unnamed-Color, rgba(255, 255, 255, 0.09));
 }
 
+.btn-2 {
+  border-radius: 8px;
+  border: 1.5px solid var(--Unnamed-Color, #e50aa7);
+  background: var(--Unnamed-Color, rgba(255, 255, 255, 0.05));
+  box-shadow: 0px 16px 80px 0px rgba(208, 17, 204, 0.15);
+}
+
+.unique-bg {
+  border-radius: 36px;
+  background: var(--Unnamed-Color, linear-gradient(90deg, #fff -106.63%, #1ee0e1 -106.6%, rgba(24, 254, 255, 0) 84.92%));
+}
+
 @media (max-width: 1023px) {
   .hero-bg {
     border-radius: 16px;
     background: var(--Unnamed-Color, rgba(255, 255, 255, 0.03));
   }
 }
-/* @media (max-width: 425px) {
-  .card-bg {
-    box-shadow: 0px 9px 100px 0px rgba(66, 50, 50, 0.35);
+@media (max-width: 380px) {
+  .unique-h1 {
+    display: block;
   }
-} */
+}
