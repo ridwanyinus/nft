@@ -1,4 +1,5 @@
 import Category from "@/components/Category";
+import Companies from "@/components/Companies";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import PopularNfts from "@/components/PopularNfts";
@@ -15,6 +16,7 @@ export default function Home() {
       </section>
       <UniqueFiles />
       <Category />
+      <Companies />
     </main>
   );
 }

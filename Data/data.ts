@@ -12,6 +12,12 @@ import uniqueImg1 from "@/public/Coin Wallet.png";
 import uniqueImg2 from "@/public/Add New.png";
 import uniqueImg3 from "@/public/NFT.png";
 import uniqueImg4 from "@/public/Sell.png";
+import company1 from "@/public/image 59.png";
+import company2 from "@/public/image 60.png";
+import company3 from "@/public/image 61.png";
+import company4 from "@/public/image 62.png";
+import company5 from "@/public/image 63.png";
+import company6 from "@/public/image 64.png";
 
 export type NavItem = {
   name: string;
@@ -106,3 +112,5 @@ export const Unique = [
     Img: uniqueImg4,
   },
 ];
+
+export const companyImg = [{ img: company1 }, { img: company2 }, { img: company3 }, { img: company4 }, { img: company5 }, { img: company6 }];
