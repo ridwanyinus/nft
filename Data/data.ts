@@ -1,4 +1,3 @@
-import Image from "next/image";
 import image1 from "@/public/image8.png";
 import image2 from "@/public/image 10.png";
 import image3 from "@/public/image 7.png";
@@ -20,6 +19,9 @@ import company5 from "@/public/image 63.png";
 import company6 from "@/public/image 64.png";
 import newsImg1 from "@/public/unsplash_hQIJon1QhZ8.png";
 import newsImg2 from "@/public/unsplash_voe-XbwNlGQ.png";
+import { CiMail } from "react-icons/ci";
+import { FaTelegram } from "react-icons/fa6";
+import { FcContacts } from "react-icons/fc";
 
 export type NavItem = {
   name: string;
@@ -120,4 +122,10 @@ export const companyImg = [{ img: company1 }, { img: company2 }, { img: company3
 export const NewsInfo = [
   { title: "Few Reasons to Sell NFTs on Nico", date: " May 20 2014", img: newsImg2 },
   { title: "Few Reasons to Sell NFTs on Nico", date: "April 18, 2024", img: newsImg1 },
+];
+
+export const contacts = [
+  { image: CiMail, text: "NicoCryptoChannel.gmail.com" },
+  { image: FaTelegram, text: "@NicoCryptoChannel" },
+  { image: FcContacts, text: "+(234) 8166 319747" },
 ];
