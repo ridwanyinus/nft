@@ -18,6 +18,8 @@ import company3 from "@/public/image 61.png";
 import company4 from "@/public/image 62.png";
 import company5 from "@/public/image 63.png";
 import company6 from "@/public/image 64.png";
+import newsImg1 from "@/public/unsplash_hQIJon1QhZ8.png";
+import newsImg2 from "@/public/unsplash_voe-XbwNlGQ.png";
 
 export type NavItem = {
   name: string;
@@ -114,3 +116,8 @@ export const Unique = [
 ];
 
 export const companyImg = [{ img: company1 }, { img: company2 }, { img: company3 }, { img: company4 }, { img: company5 }, { img: company6 }];
+
+export const NewsInfo = [
+  { title: "Few Reasons to Sell NFTs on Nico", date: " May 20 2014", img: newsImg2 },
+  { title: "Few Reasons to Sell NFTs on Nico", date: "April 18, 2024", img: newsImg1 },
+];

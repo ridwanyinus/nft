@@ -2,6 +2,7 @@ import Category from "@/components/Category";
 import Companies from "@/components/Companies";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import News from "@/components/News";
 import PopularNfts from "@/components/PopularNfts";
 import UniqueFiles from "@/components/UniqueFiles";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <UniqueFiles />
       <Category />
       <Companies />
+      <News />
     </main>
   );
 }

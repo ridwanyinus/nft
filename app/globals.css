@@ -198,4 +198,7 @@ h6 {
   .unique-h1 {
     display: block;
   }
+  .news-h1 {
+    width: 17rem;
+  }
 }
