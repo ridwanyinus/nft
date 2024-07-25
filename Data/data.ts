@@ -22,7 +22,10 @@ import newsImg2 from "@/public/unsplash_voe-XbwNlGQ.png";
 import { CiMail } from "react-icons/ci";
 import { FaTelegram } from "react-icons/fa6";
 import { FcContacts } from "react-icons/fc";
-
+import { FaFacebook } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 export type NavItem = {
   name: string;
   link: string;
@@ -129,3 +132,5 @@ export const contacts = [
   { image: FaTelegram, text: "@NicoCryptoChannel" },
   { image: FcContacts, text: "+(234) 8166 319747" },
 ];
+
+export const social = [{ image: FaFacebook }, { image: FaLinkedin }, { image: FaTwitter }, { image: FaYoutube }];

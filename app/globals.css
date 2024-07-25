@@ -196,6 +196,11 @@ input {
   font-style: normal;
 }
 
+.line {
+  background: rgba(255, 255, 255, 0.17);
+  height: 1px;
+}
+
 @media (max-width: 1023px) {
   .hero-bg {
     border-radius: 16px;
