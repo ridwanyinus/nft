@@ -4,12 +4,12 @@ import newspaper from "@/public/newspaper.png";
 import { NewsInfo } from "@/Data/data";
 const News = () => {
   return (
-    <main className="py-5 sm:py-8  lg:py-10  xl:py-16 largesceen:py-20 px-5">
+    <main className="py-8  lg:py-10  xl:py-16 largesceen:py-20 px-5">
       <section className="md:grid grid-cols-3 place-items-center gap-x-10">
         <div>
           <Image src={newspaper} alt="newspaper" className="w-10 xl:w-auto" />
           <h1 className="font-black text-white  text-2xl sm:text-3xl xl:text-[2.5rem]  largesceen:text-5xl mt-4 lg:mt-8 largesceen:mt-12 mb-4 lg:mb-6 largesceen:mb-8 lg:w-[18rem] xl:w-[22rem] desktop:w-[25.375rem] news-h1">
-            <span className="text-cyan font-extralight italic leading-normal inline-block">Trending</span> Crypto Market News
+            <span className="text-cyan sm:text-2xl lg:text-3xl font-extralight italic leading-normal inline-block">Trending</span> Crypto Market News
           </h1>
           <p className="opacity-80 text-white text-xs lg:text-sm  xl:text-lg desktop:text-xl largesceen:text-2xl w-[17rem] md:w-[11rem] lg:w-[13rem] xl:w-[20rem] desktop:w-[23rem] largesceen:w-[35rem]">
             Set a secondary sales fee and add social links, a description, profile and banner images, and a description.

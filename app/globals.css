@@ -188,6 +188,13 @@ h6 {
   background: var(--Unnamed-Color, linear-gradient(90deg, #fff -106.63%, #1ee0e1 -106.6%, rgba(24, 254, 255, 0) 84.92%));
 }
 
+.get {
+  text-shadow: 4px 4px 16px #1ee0e1;
+  -webkit-text-stroke-width: 1.5;
+  -webkit-text-stroke-color: var(--Unnamed-Color, #1ee0e1);
+  font-style: normal;
+}
+
 @media (max-width: 1023px) {
   .hero-bg {
     border-radius: 16px;

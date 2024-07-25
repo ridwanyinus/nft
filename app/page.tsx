@@ -1,5 +1,6 @@
 import Category from "@/components/Category";
 import Companies from "@/components/Companies";
+import GetInTouch from "@/components/GetInTouch";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import News from "@/components/News";
@@ -19,6 +20,7 @@ export default function Home() {
       <Category />
       <Companies />
       <News />
+      <GetInTouch />
     </main>
   );
 }
