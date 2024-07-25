@@ -31,7 +31,7 @@ const Footer = () => {
       </section>
 
       <div className="line my-8 lg:my-12 desktop:my-16 largesceen:mt-20 "></div>
-      <p className="opacity-80 text-white text-xs lg:text-sm  xl:text-lg desktop:text-xl largesceen:text-2xl max-sm:text-center">
+      <p className="opacity-80 text-white text-xs lg:text-sm  xl:text-base fourk:text-xl max-sm:text-center">
         Copyright © 2024 Nazmul Shanto. All Rights Reserved | Designed by Ridwan <Link href="https://ridwanyinus.is-a.dev">https://ridwanyinus.is-a.dev</Link>
       </p>
     </footer>
