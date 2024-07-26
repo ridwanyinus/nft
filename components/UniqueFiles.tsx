@@ -1,10 +1,18 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import Image from "next/image";
 import { Unique } from "@/Data/data";
 
 const UniqueFiles = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main className="py-5  sm:py-8  lg:py-10  2xl:py-16 px-5 ">
+    <main data-aos="fade-up" data-aos-delay="0" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="400" className="py-5  sm:py-8  lg:py-10  2xl:py-16 px-5 ">
       <p className="text-white font-bold text-center text-opacity-[0.8] unique-bg w-fit py-2 px-4 largesceen:px-6 mx-auto text-xs md:text-sm  xl:text-xl largesceen:text-2xl">UNIQUE FILES</p>
 
       <h1 className="mt-4 md:mt-6 xl:mt-8 largesceen:mt-12 font-black text-white text-center text-xl sm:text-2xl md:text-3xl xl:text-[2.5rem]  largesceen:text-5xl">

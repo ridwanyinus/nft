@@ -10,7 +10,7 @@ const Hero = () => {
     <main className="py-5  md:py-8 lg:py-4 2xl:py-10 px-5 lg:px-0">
       <section className="flex justify-between items-center flex-col lg:flex-row">
         <div className="relative">
-          <h1 className=" text-center lg:text-start  text-[2.1rem] sm:text-[3rem] md:text-[3.5rem]  xl:text-[3.484rem] largesceen:text-7xl text-white leading-[130%]  xl:min-w-[39.5rem] font-black mb-4 xs:mb-6 sm:mb-8 md:mb-12">
+          <h1 className=" text-center lg:text-start  text-[2.1rem] sm:text-[3rem] md:text-[3.5rem]  xl:text-[3.484rem] largesceen:text-7xl text-white leading-[130%]  xl:min-w-[39.5rem] font-black mb-4 xs:mb-6 sm:mb-8 md:mb-12 ">
             Buy, Create & <br /> Sell <span className="inline-block leading-normal font-light text-cyan italic">Unique NFTs </span> File.
           </h1>
 

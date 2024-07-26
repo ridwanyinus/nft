@@ -1,12 +1,27 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import h1Group from "@/public/Group 47474.svg";
 import Image from "next/image";
 import { Nfts } from "@/Data/data";
 import { FaHeart } from "react-icons/fa6";
 
 const PopularNfts = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main id="nFTs" className="py-10  sm:py-14  lg:py-20  2xl:py-24 px-5 lg:px-0">
+    <main
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-offset="150"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="400"
+      id="nFTs"
+      className="py-10  sm:py-14  lg:py-20  2xl:py-24 px-5 lg:px-0   animate__animated animate__fadeInUp">
       <h1 className="text-white font-black leading-normal text-2xl sm:text-3xl md:text-[2.5rem] largesceen:text-5xl text-center">
         <span className="italic font-light text-cyan ">Most Popular</span> NFTs
       </h1>

@@ -66,14 +66,18 @@ const CountUp: React.FC<CountUpProps> = ({ time = 2000, delay = 10, children, cl
       setTimeout(updateCounter, totalDelay);
     };
 
-    const waypoint = new (window as any).Waypoint({
-      element: elementRef.current,
-      handler: countUp,
-      offset: "100%",
-      triggerOnce: true,
-    });
+    const onScroll = () => {
+      const rect = elementRef.current!.getBoundingClientRect();
+      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        countUp();
+        window.removeEventListener("scroll", onScroll);
+      }
+    };
 
-    return () => waypoint.destroy();
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+
+    return () => window.removeEventListener("scroll", onScroll);
   }, [time, delay]);
 
   return (
