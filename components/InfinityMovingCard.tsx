@@ -56,8 +56,8 @@ const InfiniteMovingCards: React.FC<InfiniteMovingCardsProps> = ({ items, direct
   return (
     <div ref={containerRef} className={cn("scroller relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]", className)}>
       <ul ref={scrollerRef} className={cn("flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap", start && "animate-scroll", pauseOnHover && "hover:[animation-play-state:paused]")}>
-        {items.map((item) => (
-          <li key={item.name}>
+        {items.map((item, idx: number) => (
+          <li key={idx}>
             <blockquote>
               <div aria-hidden="true" className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 md:h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
               <CardComponent img={item.img} />
