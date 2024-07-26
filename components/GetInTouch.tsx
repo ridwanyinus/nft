@@ -1,8 +1,22 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const GetInTouch = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main className="py-5 sm:py-8  lg:py-10  xl:py-16 largesceen:py-20 px-5 flex flex-col justify-center items-center">
+    <main
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-offset="150"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="400"
+      className="py-5 sm:py-8  lg:py-10  xl:py-16 largesceen:py-20 px-5 flex flex-col justify-center items-center">
       <h1 className="font-bold text-4xl  xl:text-5xl desktop:text-6xl 2xl:text-7xl text-white text-center  relative">
         Get in Touch <span className="font-bold xl:text-5xl desktop:text-6xl 2xl:text-7xl text-white text-center get absolute mx-auto inset-0">Get in Touch</span>
       </h1>
