@@ -15,7 +15,9 @@ const CountUp: React.FC<CountUpProps> = ({ time = 2000, delay = 10, children, cl
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const element = $(elementRef.current!);
+    if (typeof window === "undefined" || !elementRef.current) return;
+
+    const element = $(elementRef.current);
     const countUp = () => {
       const counterupTo = element.data("counterupTo") || element.text();
       element.data("counterupTo", counterupTo);
@@ -65,7 +67,7 @@ const CountUp: React.FC<CountUpProps> = ({ time = 2000, delay = 10, children, cl
     };
 
     const waypoint = new (window as any).Waypoint({
-      element: elementRef.current!,
+      element: elementRef.current,
       handler: countUp,
       offset: "100%",
       triggerOnce: true,
