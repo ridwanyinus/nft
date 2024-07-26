@@ -15,7 +15,7 @@ const CountUp: React.FC<CountUpProps> = ({ time = 2000, delay = 10, children, cl
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (typeof window === "undefined" || !elementRef.current) return;
+    if (!elementRef.current) return;
 
     const element = $(elementRef.current);
     const countUp = () => {
