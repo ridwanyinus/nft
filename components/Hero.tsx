@@ -4,6 +4,7 @@ import hero from "@/public/image 4.png";
 import imageSix from "@/public/image 6.png";
 import eye from "@/public/eye.png";
 import { Overiew } from "@/Data/data";
+import CountUp from "./Countup";
 const Hero = () => {
   return (
     <main className="py-5  md:py-8 lg:py-4 2xl:py-10 px-5 lg:px-0">
@@ -54,7 +55,9 @@ const Hero = () => {
           {Overiew.map((items, idx: number) => (
             <div key={items.name}>
               <p className="mb-2 xl:mb-4 text-white text-sm sm:text-lg md:text-xl largesceen:text-2xl leading-[150%] text-opacity-[0.8]"> {items.name}</p>
-              <h4 className="text-white font-bold leading-normal text-xl sm:text-2xl md:text-3xl xl:text-[2rem] largesceen:text-4xl ">{items.stats}</h4>
+              <CountUp time={2000} delay={10} className="text-white font-bold leading-normal text-xl sm:text-2xl md:text-3xl xl:text-[2rem] largesceen:text-4xl">
+                <h4>{items.stats}</h4>
+              </CountUp>
             </div>
           ))}
         </div>

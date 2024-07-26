@@ -9,16 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.17",
+    "jquery": "^3.7.1",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
-    "sharp": "^0.33.4"
+    "sharp": "^0.33.4",
+    "tailwind-merge": "^2.4.0",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.30",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/waypoints": "^4.0.7",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",

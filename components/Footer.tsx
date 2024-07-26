@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="py-5 sm:pt-8  lg:pt-10  xl:pt-16 largesceen:pt-20 px-5">
+    <footer id="contact" className="py-5 sm:pt-8  lg:pt-10  xl:pt-16 largesceen:pt-20 px-5">
       <section>
         <div className="sm:grid sm:grid-cols-3 sm:place-items-center  sm:place-content-center">
           {contacts.map((item, idx: number) => (
@@ -23,7 +23,7 @@ const Footer = () => {
           {social.map((item, idx: number) => (
             <div key={idx} className="bg-[#1A124F] p-2 lg:p-3 xl:p-4 rounded-full w-fit  sm:mb-4">
               <Link href="/" className="">
-                <item.image className="text-white hover:text-gray-500 text-xl lg:text-2xl xl:text-3xl largesceen:text-4xl" />
+                <item.image className="text-white hover:text-gray-500 text-xl lg:text-2xl xl:text-3xl largesceen:text-4xl hover:rotate-12" />
               </Link>
             </div>
           ))}
@@ -31,8 +31,8 @@ const Footer = () => {
       </section>
 
       <div className="line my-8 lg:my-12 desktop:my-16 largesceen:mt-20 "></div>
-      <p className="opacity-80 text-white text-xs lg:text-sm  xl:text-base fourk:text-xl max-sm:text-center">
-        Copyright © 2024 Nazmul Shanto. All Rights Reserved | Designed by Ridwan <Link href="https://ridwanyinus.is-a.dev">https://ridwanyinus.is-a.dev</Link>
+      <p className="opacity-80 text-white text-xs lg:text-sm  xl:text-base fourk:text-xl text-center">
+        Copyright © 2024 Nazmul Shanto. All Rights Reserved | Designed by Ridwan <Link href="https://ridwanyinus.is-a.dev">ridwanyinus.is-a.dev</Link>
       </p>
     </footer>
   );

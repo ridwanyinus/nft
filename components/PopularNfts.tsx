@@ -6,7 +6,7 @@ import { FaHeart } from "react-icons/fa6";
 
 const PopularNfts = () => {
   return (
-    <main className="py-10  sm:py-14  lg:py-20  2xl:py-24 px-5 lg:px-0">
+    <main id="nFTs" className="py-10  sm:py-14  lg:py-20  2xl:py-24 px-5 lg:px-0">
       <h1 className="text-white font-black leading-normal text-2xl sm:text-3xl md:text-[2.5rem] largesceen:text-5xl text-center">
         <span className="italic font-light text-cyan ">Most Popular</span> NFTs
       </h1>
@@ -30,7 +30,7 @@ const PopularNfts = () => {
               <Image
                 src={items.img}
                 alt="nft"
-                className="max-md:object-cover w-[10rem] h-[10rem] sm:w-[21.313rem] sm:h-[12rem] md:h-[15.313rem] lg:h-[19rem] xl:h-[21.201rem] largesceen:w-[23rem] mb-4 md:mb-6 rounded-xl md:rounded-2xl"
+                className="max-md:object-cover w-[10rem] h-[10rem] sm:w-[21.313rem] sm:h-[12rem] md:h-[15.313rem] lg:h-[19rem] xl:h-[21.201rem] largesceen:w-[23rem] mb-4 md:mb-6 rounded-xl md:rounded-2xl opacity-100 hover:opacity-90 transition-all"
               />
 
               <div className="heart p-1 md:p-2 desktop:p-3 w-fit absolute top-4 right-4 md:top-8 md:right-6 lg:top-10 desktop:top-12 lg:right-8 desktop:right-12">
