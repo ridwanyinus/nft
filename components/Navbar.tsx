@@ -43,7 +43,7 @@ const Navbar = () => {
             )}
 
             {toggleMenu && (
-              <div className="flex w-full bg-dark">
+              <div className="flex w-full bg-dark ">
                 <div className="absolute overflow-hidden w-full h-screen left-0 right-0 top-0 bg-primary scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12 bg-dark">
                   {navItems.map((item, idx: number) => (
                     <ul key={`link=${idx}`}>
