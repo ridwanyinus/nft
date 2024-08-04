@@ -1,14 +1,30 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import { navItems } from "@/Data/data";
 import Link from "next/link";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY > 50);
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
   return (
-    <nav className="pt-6 lg:pt-8 px-5 lg:px-0  w-full  pb-14 lg:pb-20 relative z-10">
+    <nav className={`pt-6 lg:pt-8 px-5 lg:px-0  w-full  pb-14 lg:pb-20 relative z-10  py-4  ${scroll ? "is-sticky" : ""}`}>
       <section className="flex justify-between items-center">
         <Link href="/" className="desktop:flex-1  text-[1.75rem] font-bold leading-[118.5%] logo relative z-[999]">
           KNFT.
@@ -35,34 +51,32 @@ const Navbar = () => {
         </div>
 
         <section className="lg:hidden bg-transparent px-5 ">
-          <div className="w-full ">
-            {toggleMenu ? (
-              <IoClose size={30} color="#FFFFFF" onClick={() => setToggleMenu(false)} className="relative z-10" />
-            ) : (
-              <AiOutlineAlignLeft size={30} color="#FFFFFF" onClick={() => setToggleMenu(true)} className="relative z-10" />
-            )}
+          {toggleMenu ? (
+            <IoClose size={30} color="#FFFFFF" onClick={() => setToggleMenu(false)} className="relative z-10" />
+          ) : (
+            <AiOutlineAlignLeft size={30} onClick={() => setToggleMenu(true)} className="relative z-10  stick text-white" />
+          )}
 
-            {toggleMenu && (
-              <div className="flex w-full bg-dark ">
-                <div className="absolute overflow-hidden w-full h-screen left-0 right-0 top-0 bg-primary scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12 bg-dark">
-                  {navItems.map((item, idx: number) => (
-                    <ul key={`link=${idx}`}>
-                      <li className="flex px-4 py-1 last:mb-4">
-                        <Link href={item.link} className="text-2xl small:text-3xl transition-all text-left leading-none text-white font-medium ">
-                          {item.name}
-                        </Link>
-                      </li>
-                    </ul>
-                  ))}
-                  <button
-                    type="button"
-                    className=" text-white text-[1.25rem] py-3 px-5 small:px-10 border-[0.094rem] border-pink btn rounded-lg font-normal  hover:text-cyan hover:bg-dark transition-colors ml-2 sm:ml-4 mt-2 small:mt-4">
-                    Get in Touch
-                  </button>
-                </div>
+          {toggleMenu && (
+            <div className="fixed top-0 right-0 h-screen  w-full  ">
+              <div className=" overflow-hidden  flex flex-col justify-start bg-hero items-start w-full h-full scale-up-ver-top transition-all pt-28 pl-2 sm:pl-12 bg-dark">
+                {navItems.map((item, idx: number) => (
+                  <ul key={`link=${idx}`}>
+                    <li className="flex px-4 py-1 last:mb-4">
+                      <Link href={item.link} className="text-2xl small:text-3xl transition-all text-left leading-none text-white font-medium ">
+                        {item.name}
+                      </Link>
+                    </li>
+                  </ul>
+                ))}
+                <button
+                  type="button"
+                  className=" text-white text-[1.25rem] py-3 px-5 small:px-10 border-[0.094rem] border-pink btn rounded-lg font-normal  hover:text-cyan hover:bg-dark transition-colors ml-2 sm:ml-4 mt-2 small:mt-4">
+                  Get in Touch
+                </button>
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </section>
       </section>
     </nav>
