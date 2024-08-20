@@ -1,4 +1,3 @@
-// InfiniteMovingCards.tsx
 "use client";
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { cn } from "@/utils/cn";

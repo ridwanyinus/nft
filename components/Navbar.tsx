@@ -24,7 +24,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className={`pt-6 lg:pt-8 px-5 lg:px-0  w-full  pb-14 lg:pb-20 relative z-10  py-4  ${scroll ? "is-sticky" : ""}`}>
+    <nav className={`pt-6 lg:pt-6 lg:pb-8 px-5 lg:px-[1.9rem] xl:px-10 desktop:px-12 2xl:px-0  w-full   relative z-10  py-4  ${scroll ? "is-sticky" : ""}`}>
       <section className="flex justify-between items-center">
         <Link href="/" className="desktop:flex-1  text-[1.75rem] font-bold leading-[118.5%] logo relative z-[999]">
           KNFT.
