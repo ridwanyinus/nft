@@ -34,7 +34,7 @@ const Footer = () => {
 
       <div className='line my-8 lg:my-12 desktop:my-16 largesceen:mt-20 '></div>
       <p className='opacity-80 text-white text-xs lg:text-sm  xl:text-base fourk:text-xl text-center'>
-        Copyright © {date.getFullYear()} Nazmul Shanto. All Rights Reserved | Developed by <Link href='https://ridwanyinus.is-a.dev'>Ridwan</Link>
+        Copyright © {date.getFullYear()} Nazmul Shanto. All Rights Reserved | Code by <Link href='https://ridwan.is-a.dev'>Ridwan</Link>
       </p>
     </footer>
   );
